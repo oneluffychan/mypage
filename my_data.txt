@@ -1,0 +1,225 @@
+Here is a detailed dataset based on everything I know about you, including your skills, interests, habits, and projects. You can use this to train your chatbot or for personal documentation.
+
+
+---
+
+Personal Information
+
+Full Name: Varshith V Hegde
+
+Location: Bengaluru, India
+
+Email: varshithvh@gmail.com
+
+Phone: +91 6363549133
+
+Portfolio: varshithvhegde.github.io
+
+GitHub: github.com/varshithvhegde
+
+LinkedIn: linkedin.com/in/varshithvhegde
+
+Blog: dev.to/Varshithvhegde
+
+
+
+---
+
+Education
+
+Mangalore Institute of Technology & Engineering
+
+Degree: B.E in Computer Science and Engineering
+
+Graduation Year: 2023
+
+CGPA: 8.75
+
+
+
+
+---
+
+Professional Experience
+
+KPIT Technologies | Associate Software Engineer (June 2023 – Present)
+
+Led D2 Cloud Infrastructure, designing a secure and scalable cross-account data transfer system.
+
+Developed a full-stack web application using React (frontend) and Flask (backend) for data filtering and bulk data conversion, improving productivity by 40%.
+
+Built multiple backend solutions using Python on AWS to optimize data processing.
+
+Created utility tools for annotation teams, reducing manual processing time by 50%.
+
+Designed an automated AWS system to trim/filter data efficiently, lowering operational costs.
+
+Improved application scalability by developing cloud-based services for handling high-volume data uploads.
+
+Worked on car infotainment system software, focusing on Bluetooth (BT) and Bluetooth Low Energy (BLE) components.
+
+
+Mobiezy Solutions | React Developer (Feb 2023 – Apr 2023)
+
+Developed a Progressive Web App (PWA) for an existing Android application.
+
+Created frontend components using React JS, Hooks, and Context API for efficient state management.
+
+Built middleware components to improve data handling.
+
+Utilized AWS services (EC2, S3, Amplify) for hosting, storage, and deployment.
+
+Successfully published the PWA to enhance cross-platform usability.
+
+
+
+---
+
+Technical Skills
+
+Programming Languages
+
+Python
+
+Java
+
+JavaScript
+
+
+Frameworks & Libraries
+
+Backend: Flask
+
+Frontend: React.js, Angular
+
+
+Frontend Technologies
+
+HTML5, CSS3, Bootstrap, JavaScript (ES6+)
+
+State Management: React Hooks, Context API, Redux
+
+
+Cloud & DevOps
+
+AWS: EC2, S3, Amplify, Lambda
+
+CI/CD: Jenkins, GitLab CI/CD
+
+
+Development Areas
+
+REST APIs
+
+Progressive Web Apps (PWA)
+
+Full-Stack Web Development
+
+
+Version Control
+
+Git, GitHub
+
+
+
+---
+
+Projects & Side Work
+
+PowerSolve Project (Ongoing)
+
+Features search functionality, navbar, and logo.
+
+Uses Bootstrap and custom CSS for a modern UI.
+
+Includes a login and sign-up page with form validation.
+
+Stores error details in MongoDB, with support for file upload and timestamping.
+
+Hosted on Vercel for public access.
+
+
+Next.js 15 Landing Page (Small Business Website & Admin Dashboard)
+
+Developing a Next.js 15 landing page with an admin panel to manage products.
+
+
+Next.js Routing Blog
+
+Hosted a Next.js routing example on Vercel: routing-example-nextjs.vercel.app
+
+
+Homemade Jewelry Business
+
+Started a small jewelry business, potentially incorporating e-commerce in the future.
+
+
+
+
+---
+
+Habits & Preferences
+
+Coding Style: Clean, maintainable, and scalable code.
+
+UI Design Preferences:
+
+Professional, modern, and minimalistic UI.
+
+Uses Bootstrap, custom CSS, and built-in libraries.
+
+Avoids excessive colors while maintaining a visually appealing design.
+
+Prefers React-Slick or alternative carousels over react-elastic-carousel.
+
+
+Testing Knowledge:
+
+Familiar with Coverity Test and Sanity Testing.
+
+
+Database Preferences:
+
+Initially used Firebase for a project but later considered switching databases.
+
+
+
+
+---
+
+Personal Interests
+
+
+Blogging & Technical Writing:
+
+Writes blogs on Dev.to about technical topics like Next.js Routing.
+
+Kannada Poem Writing 
+I love to write kannada poems also
+
+Android Development:
+
+Published 5+ apps on the Google Play Store.
+
+Applied for a Junior Android Developer position.
+
+
+
+
+---
+
+Soft Skills & Work Ethic
+
+Proactive problem-solver who takes ownership of tasks.
+
+Enjoys automation and optimization to improve efficiency.
+
+Values scalability and performance in software design.
+
+Strong team player, experienced in Agile development and Jira workflows.
+
+
+
+---
+
+This should be a solid dataset for training your chatbot. If you need additional structuring, let me know!
