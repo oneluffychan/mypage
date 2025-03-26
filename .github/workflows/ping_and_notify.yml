@@ -1,0 +1,31 @@
+name: Ping and Notify
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
+  workflow_dispatch:  # Allows manual triggering of the workflow
+
+jobs:
+  ping_and_notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Ping URL
+      id: ping
+      run: |
+        response=$(curl -s https://api.allorigins.win/get?url=https%3A%2F%2Fsentia-api.onrender.com%2Fapi%2Fevents%2FgetAll)
+        http_code=$(echo $response | jq -r '.status.http_code')
+        if [ "$http_code" -ne 404 ]; then
+          echo "API responded with HTTP code ${http_code}."
+          echo "::set-output name=notify::true"
+          echo "::set-output name=message::$(echo $response | jq -r '.contents')"
+        else
+          echo "::set-output name=notify::false"
+        fi
+
+    - name: Send Teams Notification
+      if: steps.ping.outputs.notify == 'true'
+      run: |
+        webhook_url="https://kpitc.webhook.office.com/webhookb2/8e4aa092-8ea5-4fa0-ba05-71cc814c48eb@3539451e-b46e-4a26-a242-ff61502855c7/IncomingWebhook/89fcf3002b1142a8920b53c09b1e908e/1f1357d9-da83-4df3-b4be-2ac17e13ee37/V2U8ADRNJSLOFCPJ_dlGeX4YudGNS8m7ZBWfiAn_g8wD81"
+        message="API responded with HTTP code ${http_code}.\nResponse: $(echo $response | jq -r '.contents')"
+        curl -H "Content-Type: application/json" -d "{\"title\": \"API Status Alert\", \"text\": \"${message}\"}" $webhook_url
