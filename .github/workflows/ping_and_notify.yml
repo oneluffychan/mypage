@@ -15,7 +15,7 @@ jobs:
       run: |
         response=$(curl -s https://api.allorigins.win/get?url=https%3A%2F%2Fsentia-api.onrender.com%2Fapi%2Fevents%2FgetAll)
         http_code=$(echo $response | jq -r '.status.http_code')
-        if [ "$http_code" -ne 404 ]; then
+        if [ "$http_code" -e 404 ]; then
           echo "API responded with HTTP code ${http_code}."
           echo "::set-output name=notify::true"
           echo "::set-output name=message::$(echo $response | jq -r '.contents')"
