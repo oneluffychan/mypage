@@ -17,12 +17,12 @@ jobs:
         echo "API Response: $response"
         http_code=$(echo $response | jq -r '.status.http_code')
         echo "HTTP Code: $http_code"
-        if [ "$http_code" -e 404 ]; then
+        if [ "$http_code" -ne 404 ]; then
           echo "API responded with HTTP code ${http_code}."
           echo "::set-output name=notify::true"
           echo "::set-output name=message::$(echo $response | jq -r '.contents')"
         else
-          echo "::set-output name=notify::false"
+          echo "::set-output name=notify::true"
         fi
 
     - name: Send Teams Notification
